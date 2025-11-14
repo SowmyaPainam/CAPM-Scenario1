@@ -1,0 +1,76 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### Employee
+# @name Employee_GET
+GET {{server}}/odata/v4/employee/Employee
+Authorization: Basic {{username}}:{{password}}
+
+
+### Employee
+# @name Employee_POST
+POST {{server}}/odata/v4/employee/Employee
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  
+  "nameFirst": "nameFirst-11579501",
+  "nameMiddle": "nameMiddle-11579501",
+  "nameLast": "nameLast-11579501",
+  "nameInitials": "nameInitials-11579501",
+  "Gender": "M",
+  "Language": "Language-11579501",
+  "phoneNumber": " to create data for regex true",
+  "Email": "Install package 'randexp' to create data for regex true",
+  "loginName": "ame-11579501",
+  "Currency": {
+    "code": "EUR"
+  },
+  "salaryAmount": 659,
+  "accountNumber": "tNumber-11579501",
+  "bankId": "11579501",
+  "bankName": "bankName-11579501"
+}
+
+
+### Employee
+# @name Employee_PATCH
+PATCH {{server}}/odata/v4/employee/Employee/11579501-74db-4392-98f1-8c5bc0c2f26d
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "f9feb844-f778-4630-b738-e56433ba6fb2",
+  "nameFirst": "snameFirst-11579501",
+  "nameMiddle": "nameMiddle-11579501",
+  "nameLast": "nameLast-11579501",
+  "nameInitials": "nameInitials-11579501",
+  "Gender": "M",
+  "Language": "Language-11579501",
+  "phoneNumber": " to create data for regex true",
+  "Email": "Install package 'randexp' to create data for regex true",
+  "loginName": "nameFirst",
+  "Currency": {
+    "code": "USD"
+  },
+  "salaryAmount": 659,
+  "accountNumber": "tNumber-11579501",
+  "bankId": "11579501",
+  "bankName": "bankName-11579501"
+}
+
+
+### Employee
+# @name Employee_DELETE
+DELETE {{server}}/odata/v4/employee/Employee/3dd06073-b13e-4cdd-b210-b97bd7af1d31
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Currencies
+# @name Currencies_GET
+GET {{server}}/odata/v4/employee/Currencies
+Authorization: Basic {{username}}:{{password}}
